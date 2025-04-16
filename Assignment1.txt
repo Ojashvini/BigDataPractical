@@ -1,0 +1,39 @@
+Assignment No. 1
+Linux Command
+Create File in Linux
+
+vi firstfile  
+
+Show File Contain in Linux
+
+cat firstfile.txt
+Hadoop Command
+1. Create a Directory in HDFS
+To create a directory in HDFS:
+
+hdfs dfs –mkdir firstdir
+
+2. List Files in a Directory in HDFS
+
+hdfs dfs –ls
+
+3. Upload Files from Local File System to HDFS
+Use the -put command to upload files from your local file system to HDFS.
+
+hdfs dfs –put firstfile.txt /user/cloudera/firstdir 
+
+4. List Files in a Directory
+Use the -ls command to list the files in an HDFS directory.
+
+hdfs dfs –ls  /user/cloudera/firstdir/
+
+5. Display the Contents of a File
+Use the -cat command to display the contents of a file in HDFS.
+
+hdfs dfs -cat  /user/cloudera/firstfile.txt
+
+6. Delete a File in HDFS
+Use the -rm command to remove a file from HDFS.
+
+hdfs dfs -rm  /user/cloudera/firstdir/firstfile1.txt 
+
